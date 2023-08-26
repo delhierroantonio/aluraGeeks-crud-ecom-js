@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Alura Geek | ONE | G5</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header p-x-main">
+      <nav class="nav flex-sb-c">
+        <div class="left flex-0-c">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="alura geek logo" class="logo">
+          </a>
+          <form class="search-input" data-search-input>
+            <input type="text" id="search-input" class="input" name="search" placeholder="¿Que deseas buscar?">
+            <button type="submit" form="search-input" class="search-button" data-search-btn>
+              <img src="./assets/images/icon-search.svg" class="search-icon" alt="search icon" >
+            </button>
+          </form>
+        </div>
+        <div class="right flex-c-c">
+          <a href="/screens/login.html">
+            <button class="login-btn">login</button>
+          </a>
+          <img src="./assets/images/icon-search-black.svg" alt="search icon" class="last-search-icon pointer" data-search>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <section class="hero">
+    <div class="hero-container p-main">
+      <div class="hero-content">
+        <h1 class="hero-title">Diciembre promocional</h1>
+        <h3 class="hero-subtitle">Productos selecionados con 33% de descuento</h3>
+        <a href="/screens/consoles.html" class="hero-btn">ver consolas</a>
+      </div>
+    </div>
+  </section>
+  <main class="products-section">
+    <!-- - star wars - -->
+    <section class="products-row p-main">
+      <div class="products-nav">
+        <h3 class="products-title">star wars</h3>
+        <a href="#" class="products-all" data-see-all>ver todo</a>
+      </div>
+      <div class="products" data-category="sw">
+
+      </div>
+    </section>
+    <!-- - consolas - -->
+    <section class="products-row p-main">
+      <div class="products-nav">
+        <h3 class="products-title">consolas</h3>
+        <a href="#" class="products-all" data-see-all>ver todo</a>
+      </div>
+      <div class="products" data-category="vg">
+        
+      </div>
+    </section>
+    <!-- - diversos - -->
+    <section class="products-row p-main">
+      <div class="products-nav">
+        <h3 class="products-title">diversos</h3>
+        <a href="#" class="products-all" data-see-all>ver todo</a>
+      </div>
+      <div class="products" data-category="ot">
+        
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <a href="/" class="footer-logo">
+          <img src="./assets/images/logo.svg" alt="main logo">
+        </a>
+        <ul class="footer-nav p-main">
+          <li class="footer-nav-link"><a href="#">Quienes somos</a></li>
+          <li class="footer-nav-link"><a href="#">Politicas de privacidad</a></li>
+          <li class="footer-nav-link"><a href="#">Programa de fidelidad</a></li>
+          <li class="footer-nav-link"><a href="#">Nuestras tiendas</a></li>
+          <li class="footer-nav-link"><a href="#">Quiero ser franquisiado</a></li>
+          <li class="footer-nav-link"><a href="#">Anuncie aqui</a></li>
+        </ul>
+      </nav>
+      <form class="footer-form" data-form>
+        <fieldset class="p-main">
+          <h3 class="footer-form-title">Hable con nosotros</h3>
+          <p class="field field-name">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre completo" data-name>
+          </p>
+          <p class="field field-message">
+            <label for="message">Escriba su mensaje</label>
+            <textarea placeholder="Cuentanos mas sobre tu idea" id="message" data-msg></textarea>
+          </p>
+          <span class="error-span" data-error-span></span>
+          <button type="submit" class="form-btn">Enviar mensaje</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+  <div class="rodapie">
+    <p>desarrollado por antonio del hierro 2023 | ONE G5</p>
+  </div>
+  <script src="./controllers/products-controller.js" type="module"></script>
+  <script src="./controllers/form-controller.js" type="module"></script>
+  <script src="./controllers/see-all.js" type="module"></script>
+  <script src="./controllers/search-controller.js" type="module"></script>
+</body>
+
+</html>

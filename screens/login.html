@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Alura Geek | ONE | G5</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header p-x-main">
+      <nav class="nav flex-sb-c">
+        <div class="left flex-0-c">
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="alura geek logo" class="logo">
+          </a>
+          <div class="search-input">
+            <input type="text" class="input" placeholder="¿Que deseas buscar?">
+            <img src="../assets/images/icon-search.svg" alt="search icon">
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <main class="login container">
+    <form class="login-form p-y-main" data-login-form>
+      <fieldset class="form-fieldset">
+        <h3 class="login-form-title">iniciar sesion</h3>
+        <p class="login-form-field">
+          <input type="email" name="email" id="email" placeholder="Escriba su correo electronico" data-login-email>
+        </p>
+        <p class="login-form-field">
+          <input type="password" name="password" id="password" placeholder="Escriba su contraseña" data-login-pass>
+        </p>
+        <button class="login-form-btn" data-login-btn>Entrar</button>
+        <span class="hidden error" data-hidden>error, verifique los campos</span>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <a href="/" class="footer-logo">
+          <img src="../assets/images/logo.svg" alt="main logo">
+        </a>
+        <ul class="footer-nav p-main">
+          <li class="footer-nav-link"><a href="#">Quienes somos</a></li>
+          <li class="footer-nav-link"><a href="#">Politicas de privacidad</a></li>
+          <li class="footer-nav-link"><a href="#">Programa de fidelidad</a></li>
+          <li class="footer-nav-link"><a href="#">Nuestras tiendas</a></li>
+          <li class="footer-nav-link"><a href="#">Quiero ser franquisiado</a></li>
+          <li class="footer-nav-link"><a href="#">Anuncie aqui</a></li>
+        </ul>
+      </nav>
+      <form class="footer-form">
+        <fieldset class="p-main">
+          <h3 class="footer-form-title">Hable con nosotros</h3>
+          <p class="field field-name">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre completo">
+          </p>
+          <p class="field field-message">
+            <label for="message">Escriba su mensaje</label>
+            <textarea placeholder="Cuentanos mas sobre tu idea" id="message"></textarea>
+          </p>
+          <button type="submit" class="form-btn">Enviar mensaje</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+  <div class="rodapie">
+    <p>desarrollado por antonio del hierro 2023 | ONE G5</p>
+  </div>
+  <script type="module" src="../controllers/login-controller.js"></script>
+</body>
+
+</html>
