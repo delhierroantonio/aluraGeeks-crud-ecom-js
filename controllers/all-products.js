@@ -7,7 +7,7 @@ const allContainer = document.querySelector('[data-all-products]');
       const content = `
       <div>
         <div class="all-product-image" id='${id}'>
-          <img src=".${imageUrl}" alt="product photo" class="ap-image">
+          <img src="${imageUrl}" alt="product photo" class="ap-image">
           <img src="../assets/images/delete-icon.svg" alt="delete icon" class="delete-icon" data-delete id='${id}'>
           <a href="./edit-product.html?id=${id}">
             <img src="../assets/images/edit-icon.svg" alt="edit icon" class="edit-icon" data-edit id='${id}'>
@@ -28,7 +28,7 @@ const allContainer = document.querySelector('[data-all-products]');
       deleteBtn.addEventListener('click', () => {
         const id = deleteBtn.id;
         productsServices
-          .DeleteProduct(id)
+          .DeleteProduct('/' + id)
           .then((res) => {
             console.log(res);
           })

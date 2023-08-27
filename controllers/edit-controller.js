@@ -15,7 +15,7 @@ const getProduct = async () => {
 
   try {
     
-    const product = await productsServices.GetProduct(wId)
+    const product = await productsServices.GetProduct('/' + wId)
     const productImageUrl = document.querySelector('[data-edit-image]');
     const productSelect = document.querySelector('[data-edit-select]');
     const productName = document.querySelector('[data-edit-name]');

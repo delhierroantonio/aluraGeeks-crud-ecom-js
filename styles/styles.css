@@ -120,7 +120,6 @@ input.search {
   }
 
   .search-button {
-    /* ! */
     border: none;
     background-color: transparent;
     z-index: 999;

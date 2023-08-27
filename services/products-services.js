@@ -11,7 +11,7 @@ const GetProduct = (id) => {
   return fetch(`${renderUrl}${id}`).then((res) => res.json());
 }
 const CreateProduct = (name, price, category, desc, imageUrl, id) => {
-  return fetch(url + 'products', {
+  return fetch(renderUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -34,7 +34,7 @@ const UpdateProduct = (imageUrl,category, name, price, desc, id) => {
 
 const DeleteProduct = (id) => {
   console.log(`Eliminar a --> ${id}`);
-  return fetch(url + 'products/' + id, {
+  return fetch(renderUrl + id, {
     method: 'DELETE',
   });
 };

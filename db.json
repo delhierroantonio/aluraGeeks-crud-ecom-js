@@ -9,23 +9,24 @@
       "id": 1
     },
     {
-      "imageUrl": "./assets/images/sw2.webp",
+      "imageUrl": "https://images.unsplash.com/photo-1579935110464-fcd041be62d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
       "category": "sw",
-      "name": "stars wars figure ZZ",
-      "price": "11111",
-      "desc": "UPDATED NOW!",
+      "name": "stars wars figure",
+      "price": "169",
+      "desc": "description",
       "id": 2
     },
     {
-      "id": 3,
+      "imageUrl": "https://images.unsplash.com/photo-1599719500956-d158a26ab3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "category": "sw",
       "name": "stars wars figure 3",
       "price": 149,
-      "category": "sw",
-      "imageUrl": "./assets/images/sw3.webp"
+      "desc": "description",
+      "id": 3
     },
     {
       "id": 4,
-      "name": "stars wars figure 4",
+      "name": "https://images.unsplash.com/photo-1574047473179-a73921fc1eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
       "price": 399,
       "category": "sw",
       "imageUrl": "./assets/images/sw4.webp"
@@ -129,14 +130,6 @@
       "imageUrl": "./assets/images/d6.webp"
     },
     {
-      "name": "Abstract Figure",
-      "price": "2777",
-      "category": "ot",
-      "desc": "Blue ocen abstract figure from Artthemist 2023 conf, limited edition.",
-      "imageUrl": "https://images.unsplash.com/photo-1691443297137-68818fe7bce9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-      "id": "52141ce5-7e9e-40d4-9653-0d2642c087e2"
-    },
-    {
       "name": "Bulb Calid Zone",
       "price": "2999",
       "category": "ot",
@@ -151,14 +144,6 @@
       "price": "6800",
       "desc": "Smart watch UPDATEDDDDDDDDDDDDDDDDDD",
       "id": "bf41425e-3c14-4049-9a9c-a61335242206"
-    },
-    {
-      "name": "GB Edition(POKEMON)",
-      "price": "2777",
-      "category": "vg",
-      "desc": "Gameboy Color Special Edition POKEMON",
-      "imageUrl": "data:image/jpeg;base64,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",
-      "id": "2a6309c7-5fe9-4efc-b0bd-93f76d05f2a2"
     },
     {
       "name": "SW NEW FETCHED",

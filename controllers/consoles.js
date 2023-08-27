@@ -10,7 +10,7 @@ const newProduct = (id, name, price, imageUrl) => {
   // ./assets/images/
   const content = `
       <div class="product">
-        <img src=".${imageUrl}" alt="${name} product" class="product-image">
+        <img src="${imageUrl}" alt="${name} product" class="product-image">
         <p class="product-title">${name}</p>
         <span class="product-price">$${price}</span>
         <a href="#" class="product-more" id='${id}'>ver producto</a>
