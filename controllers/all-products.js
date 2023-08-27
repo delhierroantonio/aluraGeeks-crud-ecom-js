@@ -31,6 +31,7 @@ const allContainer = document.querySelector('[data-all-products]');
           .DeleteProduct('/' + id)
           .then((res) => {
             console.log(res);
+            window.location.href = '/screens/all-products.html'
           })
           .catch((error) => console.log(error));
       });
