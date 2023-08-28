@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
   productsServices
     .CreateProduct(nameInput.value, priceInput.value, categoryInput.value, descInput.value, imageInput.value)
     .then((res) => {
-      window.location.href = '/screens/all-products.html'
+      window.location.href = './screens/all-products.html'
       console.log(res);
     // debugger
   })
